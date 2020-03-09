@@ -1,0 +1,831 @@
+graph G {
+overlap=false
+splines=true
+orientation=landscape
+size="13,15"
+"gut" [fontname=Helvetica,fontsize=10]
+"gut" -- "bewertungsspezifisch";
+"bewertungsspezifisch" [fontname=Helvetica,fontsize=10]
+"bewertungsspezifisch" -- "klassenübergreifend";
+"klassenübergreifend"[fontname=Helvetica,fontsize=8]
+"bewertungsspezifisch" -- "unecht";
+"unecht"[fontname=Helvetica,fontsize=8]
+"bewertungsspezifisch" -- "unterbewertet";
+"unterbewertet"[fontname=Helvetica,fontsize=8]
+"bewertungsspezifisch" -- "unterwertig";
+"unterwertig"[fontname=Helvetica,fontsize=8]
+"bewertungsspezifisch" -- "unwert";
+"unwert"[fontname=Helvetica,fontsize=8]
+"bewertungsspezifisch" -- "schlecht";
+"schlecht"[fontname=Helvetica,fontsize=8]
+"bewertungsspezifisch" -- "richtig";
+"richtig"[fontname=Helvetica,fontsize=8]
+"bewertungsspezifisch" -- "falsch";
+"falsch"[fontname=Helvetica,fontsize=8]
+"bewertungsspezifisch" -- "wirklich";
+"wirklich"[fontname=Helvetica,fontsize=8]
+"bewertungsspezifisch" -- "surreal";
+"surreal"[fontname=Helvetica,fontsize=8]
+"bewertungsspezifisch" -- "passiv";
+"passiv"[fontname=Helvetica,fontsize=8]
+"bewertungsspezifisch" -- "kritisch";
+"kritisch"[fontname=Helvetica,fontsize=8]
+"bewertungsspezifisch" -- "grenzwertig";
+"grenzwertig"[fontname=Helvetica,fontsize=8]
+"bewertungsspezifisch" -- "wertneutral";
+"wertneutral"[fontname=Helvetica,fontsize=8]
+"bewertungsspezifisch" -- "bewertbar";
+"bewertbar"[fontname=Helvetica,fontsize=8]
+"bewertungsspezifisch" -- "wert";
+"wert"[fontname=Helvetica,fontsize=8]
+"bewertungsspezifisch" -- "verbesserungsfähig";
+"verbesserungsfähig"[fontname=Helvetica,fontsize=8]
+"bewertungsspezifisch" -- "gewaltverherrlichend";
+"gewaltverherrlichend"[fontname=Helvetica,fontsize=8]
+"gut" -- "golden";
+"golden" [fontname=Helvetica,fontsize=10]
+"gut" -- "schön";
+"schön" [fontname=Helvetica,fontsize=10]
+"schön" -- "aussehensspezifisch";
+"aussehensspezifisch"[fontname=Helvetica,fontsize=8]
+"schön" -- "nett";
+"nett"[fontname=Helvetica,fontsize=8]
+"schön" -- "flott";
+"flott"[fontname=Helvetica,fontsize=8]
+"schön" -- "fesch";
+"fesch"[fontname=Helvetica,fontsize=8]
+"schön" -- "proper";
+"proper"[fontname=Helvetica,fontsize=8]
+"schön" -- "prächtig";
+"prächtig"[fontname=Helvetica,fontsize=8]
+"schön" -- "wunderschön";
+"wunderschön"[fontname=Helvetica,fontsize=8]
+"schön" -- "hübsch";
+"hübsch"[fontname=Helvetica,fontsize=8]
+"schön" -- "wohlgeformt";
+"wohlgeformt"[fontname=Helvetica,fontsize=8]
+"schön" -- "anmutig";
+"anmutig"[fontname=Helvetica,fontsize=8]
+"schön" -- "dekorativ";
+"dekorativ"[fontname=Helvetica,fontsize=8]
+"schön" -- "stilvoll";
+"stilvoll"[fontname=Helvetica,fontsize=8]
+"gut" -- "gediegen";
+"gediegen" [fontname=Helvetica,fontsize=10]
+"gut" -- "langersehnt";
+"langersehnt" [fontname=Helvetica,fontsize=10]
+"gut" -- "genial";
+"genial" [fontname=Helvetica,fontsize=10]
+"gut" -- "supergut";
+"supergut" [fontname=Helvetica,fontsize=10]
+"gut" -- "glücklich";
+"glücklich" [fontname=Helvetica,fontsize=10]
+"glücklich" -- "glimpflich";
+"glimpflich"[fontname=Helvetica,fontsize=8]
+"gut" -- "blendend";
+"blendend" [fontname=Helvetica,fontsize=10]
+"gut" -- "besser";
+"besser" [fontname=Helvetica,fontsize=10]
+"besser" -- "steigerungsspezifisch";
+"steigerungsspezifisch"[fontname=Helvetica,fontsize=8]
+"besser" -- "verbessernd";
+"verbessernd"[fontname=Helvetica,fontsize=8]
+"gut" -- "fein";
+"fein" [fontname=Helvetica,fontsize=10]
+"fein" -- "hochfein";
+"hochfein"[fontname=Helvetica,fontsize=8]
+"fein" -- "mittelfein";
+"mittelfein"[fontname=Helvetica,fontsize=8]
+"gut" -- "hervorragend";
+"hervorragend" [fontname=Helvetica,fontsize=10]
+"hervorragend" -- "erlesen";
+"erlesen"[fontname=Helvetica,fontsize=8]
+"hervorragend" -- "exquisit";
+"exquisit"[fontname=Helvetica,fontsize=8]
+"hervorragend" -- "vorzüglich";
+"vorzüglich"[fontname=Helvetica,fontsize=8]
+"hervorragend" -- "bestechend";
+"bestechend"[fontname=Helvetica,fontsize=8]
+"gut" -- "außerordentlich";
+"außerordentlich" [fontname=Helvetica,fontsize=10]
+"außerordentlich" -- "eminent";
+"eminent"[fontname=Helvetica,fontsize=8]
+"außerordentlich" -- "sonderlich";
+"sonderlich"[fontname=Helvetica,fontsize=8]
+"gut" -- "ausgezeichnet";
+"ausgezeichnet" [fontname=Helvetica,fontsize=10]
+"ausgezeichnet" -- "hitverdächtig";
+"hitverdächtig"[fontname=Helvetica,fontsize=8]
+"ausgezeichnet" -- "preisgekrönt";
+"preisgekrönt"[fontname=Helvetica,fontsize=8]
+"gut" -- "paradigmatisch";
+"paradigmatisch" [fontname=Helvetica,fontsize=10]
+"paradigmatisch" -- "klassisch";
+"klassisch"[fontname=Helvetica,fontsize=8]
+"gut" -- "perfekt";
+"perfekt" [fontname=Helvetica,fontsize=10]
+"perfekt" -- "vollendet";
+"vollendet"[fontname=Helvetica,fontsize=8]
+"gut" -- "unfehlbar";
+"unfehlbar" [fontname=Helvetica,fontsize=10]
+"gut" -- "überragend";
+"überragend" [fontname=Helvetica,fontsize=10]
+"überragend" -- "superlativ";
+"superlativ"[fontname=Helvetica,fontsize=8]
+"gut" -- "toll";
+"toll" [fontname=Helvetica,fontsize=10]
+"toll" -- "supertoll";
+"supertoll"[fontname=Helvetica,fontsize=8]
+"toll" -- "cool";
+"cool"[fontname=Helvetica,fontsize=8]
+"toll" -- "super";
+"super"[fontname=Helvetica,fontsize=8]
+"toll" -- "doll";
+"doll"[fontname=Helvetica,fontsize=8]
+"toll" -- "astrein";
+"astrein"[fontname=Helvetica,fontsize=8]
+"toll" -- "fabelhaft";
+"fabelhaft"[fontname=Helvetica,fontsize=8]
+"gut" -- "märchenhaft";
+"märchenhaft" [fontname=Helvetica,fontsize=10]
+"gut" -- "fantastisch";
+"fantastisch" [fontname=Helvetica,fontsize=10]
+"gut" -- "phänomenal";
+"phänomenal" [fontname=Helvetica,fontsize=10]
+"gut" -- "sensationell";
+"sensationell" [fontname=Helvetica,fontsize=10]
+"gut" -- "traumhaft";
+"traumhaft" [fontname=Helvetica,fontsize=10]
+"gut" -- "idyllisch";
+"idyllisch" [fontname=Helvetica,fontsize=10]
+"idyllisch" -- "malerisch";
+"malerisch"[fontname=Helvetica,fontsize=8]
+"idyllisch" -- "arkadisch";
+"arkadisch"[fontname=Helvetica,fontsize=8]
+"gut" -- "legendenhaft";
+"legendenhaft" [fontname=Helvetica,fontsize=10]
+"legendenhaft" -- "legendenumwoben";
+"legendenumwoben"[fontname=Helvetica,fontsize=8]
+"gut" -- "Erfolg versprechend";
+"Erfolg versprechend" [fontname=Helvetica,fontsize=10]
+"gut" -- "prima";
+"prima" [fontname=Helvetica,fontsize=10]
+"gut" -- "wunderbar";
+"wunderbar" [fontname=Helvetica,fontsize=10]
+"gut" -- "herrlich";
+"herrlich" [fontname=Helvetica,fontsize=10]
+"herrlich" -- "göttlich";
+"göttlich"[fontname=Helvetica,fontsize=8]
+"gut" -- "klasse";
+"klasse" [fontname=Helvetica,fontsize=10]
+"klasse" -- "marktführend";
+"marktführend"[fontname=Helvetica,fontsize=8]
+"klasse" -- "unerreicht";
+"unerreicht"[fontname=Helvetica,fontsize=8]
+"gut" -- "erstklassig";
+"erstklassig" [fontname=Helvetica,fontsize=10]
+"gut" -- "meisterhaft";
+"meisterhaft" [fontname=Helvetica,fontsize=10]
+"meisterhaft" -- "virtuos";
+"virtuos"[fontname=Helvetica,fontsize=8]
+"meisterhaft" -- "gekonnt";
+"gekonnt"[fontname=Helvetica,fontsize=8]
+"gut" -- "großartig";
+"großartig" [fontname=Helvetica,fontsize=10]
+"großartig" -- "königlich";
+"königlich"[fontname=Helvetica,fontsize=8]
+"großartig" -- "formidabel";
+"formidabel"[fontname=Helvetica,fontsize=8]
+"großartig" -- "hochklassig";
+"hochklassig"[fontname=Helvetica,fontsize=8]
+"großartig" -- "famos";
+"famos"[fontname=Helvetica,fontsize=8]
+"großartig" -- "fulminant";
+"fulminant"[fontname=Helvetica,fontsize=8]
+"gut" -- "berauschend";
+"berauschend" [fontname=Helvetica,fontsize=10]
+"gut" -- "elefantös";
+"elefantös" [fontname=Helvetica,fontsize=10]
+"gut" -- "ideal";
+"ideal" [fontname=Helvetica,fontsize=10]
+"gut" -- "eingängig";
+"eingängig" [fontname=Helvetica,fontsize=10]
+"gut" -- "gehoben";
+"gehoben" [fontname=Helvetica,fontsize=10]
+"gut" -- "geeignet";
+"geeignet" [fontname=Helvetica,fontsize=10]
+"geeignet" -- "anpassbar";
+"anpassbar"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "koalitionsfähig";
+"koalitionsfähig"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "zurechnungsfähig";
+"zurechnungsfähig"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "kampffähig";
+"kampffähig"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "haftfähig";
+"haftfähig"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "teilbar";
+"teilbar"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "tauglich";
+"tauglich"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "waffenfähig";
+"waffenfähig"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "prädestiniert";
+"prädestiniert"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "erprobt";
+"erprobt"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "geländegängig";
+"geländegängig"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "tanzbar";
+"tanzbar"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "singbar";
+"singbar"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "erlebbar";
+"erlebbar"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "bespielbar";
+"bespielbar"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "magnetisierbar";
+"magnetisierbar"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "mischbar";
+"mischbar"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "lernbar";
+"lernbar"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "kombinierbar";
+"kombinierbar"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "druckfähig";
+"druckfähig"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "abzugsfähig";
+"abzugsfähig"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "anrechnungsfähig";
+"anrechnungsfähig"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "marktfähig";
+"marktfähig"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "lötfähig";
+"lötfähig"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "erstattungsfähig";
+"erstattungsfähig"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "reaktionsfähig";
+"reaktionsfähig"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "wettbewerbsfähig";
+"wettbewerbsfähig"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "börsenfähig";
+"börsenfähig"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "aufnahmefähig";
+"aufnahmefähig"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "lagerfähig";
+"lagerfähig"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "beihilfefähig";
+"beihilfefähig"[fontname=Helvetica,fontsize=8]
+"geeignet" -- "panzerbrechend";
+"panzerbrechend"[fontname=Helvetica,fontsize=8]
+"gut" -- "günstig";
+"günstig" [fontname=Helvetica,fontsize=10]
+"günstig" -- "passend";
+"passend"[fontname=Helvetica,fontsize=8]
+"günstig" -- "gelegen";
+"gelegen"[fontname=Helvetica,fontsize=8]
+"günstig" -- "verkehrsgünstig";
+"verkehrsgünstig"[fontname=Helvetica,fontsize=8]
+"günstig" -- "strömungsgünstig";
+"strömungsgünstig"[fontname=Helvetica,fontsize=8]
+"gut" -- "gelungen";
+"gelungen" [fontname=Helvetica,fontsize=10]
+"gelungen" -- "rund";
+"rund"[fontname=Helvetica,fontsize=8]
+"gut" -- "genehm";
+"genehm" [fontname=Helvetica,fontsize=10]
+"genehm" -- "manierlich";
+"manierlich"[fontname=Helvetica,fontsize=8]
+"genehm" -- "menschlich";
+"menschlich"[fontname=Helvetica,fontsize=8]
+"genehm" -- "vertretbar";
+"vertretbar"[fontname=Helvetica,fontsize=8]
+"genehm" -- "annehmbar";
+"annehmbar"[fontname=Helvetica,fontsize=8]
+"genehm" -- "passabel";
+"passabel"[fontname=Helvetica,fontsize=8]
+"genehm" -- "tragbar";
+"tragbar"[fontname=Helvetica,fontsize=8]
+"genehm" -- "wählbar";
+"wählbar"[fontname=Helvetica,fontsize=8]
+"gut" -- "begrüßenswert";
+"begrüßenswert" [fontname=Helvetica,fontsize=10]
+"gut" -- "attraktiv";
+"attraktiv" [fontname=Helvetica,fontsize=10]
+"attraktiv" -- "ästhetisch";
+"ästhetisch"[fontname=Helvetica,fontsize=8]
+"gut" -- "nützlich";
+"nützlich" [fontname=Helvetica,fontsize=10]
+"nützlich" -- "tüchtig";
+"tüchtig"[fontname=Helvetica,fontsize=8]
+"nützlich" -- "ersprießlich";
+"ersprießlich"[fontname=Helvetica,fontsize=8]
+"nützlich" -- "dienlich";
+"dienlich"[fontname=Helvetica,fontsize=8]
+"nützlich" -- "lohnend";
+"lohnend"[fontname=Helvetica,fontsize=8]
+"nützlich" -- "effektiv";
+"effektiv"[fontname=Helvetica,fontsize=8]
+"nützlich" -- "brauchbar";
+"brauchbar"[fontname=Helvetica,fontsize=8]
+"nützlich" -- "gedeihlich";
+"gedeihlich"[fontname=Helvetica,fontsize=8]
+"nützlich" -- "fördernd";
+"fördernd"[fontname=Helvetica,fontsize=8]
+"gut" -- "praktisch";
+"praktisch" [fontname=Helvetica,fontsize=10]
+"praktisch" -- "pragmatisch";
+"pragmatisch"[fontname=Helvetica,fontsize=8]
+"gut" -- "erfolgreich";
+"erfolgreich" [fontname=Helvetica,fontsize=10]
+"erfolgreich" -- "erfolgsverwöhnt";
+"erfolgsverwöhnt"[fontname=Helvetica,fontsize=8]
+"erfolgreich" -- "siegreich";
+"siegreich"[fontname=Helvetica,fontsize=8]
+"erfolgreich" -- "fündig";
+"fündig"[fontname=Helvetica,fontsize=8]
+"gut" -- "chancenreich";
+"chancenreich" [fontname=Helvetica,fontsize=10]
+"chancenreich" -- "aussichtsreich";
+"aussichtsreich"[fontname=Helvetica,fontsize=8]
+"chancenreich" -- "perspektivreich";
+"perspektivreich"[fontname=Helvetica,fontsize=8]
+"chancenreich" -- "zukunftsfähig";
+"zukunftsfähig"[fontname=Helvetica,fontsize=8]
+"gut" -- "glückreich";
+"glückreich" [fontname=Helvetica,fontsize=10]
+"gut" -- "moralisch";
+"moralisch" [fontname=Helvetica,fontsize=10]
+"gut" -- "ehrenvoll";
+"ehrenvoll" [fontname=Helvetica,fontsize=10]
+"gut" -- "prestigeträchtig";
+"prestigeträchtig" [fontname=Helvetica,fontsize=10]
+"prestigeträchtig" -- "rentabel";
+"rentabel"[fontname=Helvetica,fontsize=8]
+"gut" -- "sinnreich";
+"sinnreich" [fontname=Helvetica,fontsize=10]
+"sinnreich" -- "sinnstiftend";
+"sinnstiftend"[fontname=Helvetica,fontsize=8]
+"sinnreich" -- "sinnerfüllt";
+"sinnerfüllt"[fontname=Helvetica,fontsize=8]
+"gut" -- "ergebnisreich";
+"ergebnisreich" [fontname=Helvetica,fontsize=10]
+"gut" -- "zweckmäßig";
+"zweckmäßig" [fontname=Helvetica,fontsize=10]
+"gut" -- "optimal";
+"optimal" [fontname=Helvetica,fontsize=10]
+"gut" -- "angenehm";
+"angenehm" [fontname=Helvetica,fontsize=10]
+"angenehm" -- "sanft";
+"sanft"[fontname=Helvetica,fontsize=8]
+"angenehm" -- "freundlich";
+"freundlich"[fontname=Helvetica,fontsize=8]
+"angenehm" -- "ertragbar";
+"ertragbar"[fontname=Helvetica,fontsize=8]
+"angenehm" -- "schmeichelhaft";
+"schmeichelhaft"[fontname=Helvetica,fontsize=8]
+"gut" -- "verträglich";
+"verträglich" [fontname=Helvetica,fontsize=10]
+"verträglich" -- "zuträglichkeitsspezifisch";
+"zuträglichkeitsspezifisch"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "lebensmittelecht";
+"lebensmittelecht"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "leicht";
+"leicht"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "heilvoll";
+"heilvoll"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "unbedenklich";
+"unbedenklich"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "heilsam";
+"heilsam"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "probiotisch";
+"probiotisch"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "wohltuend";
+"wohltuend"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "ungiftig";
+"ungiftig"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "essbar";
+"essbar"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "verdaulich";
+"verdaulich"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "umweltverträglich";
+"umweltverträglich"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "sozialverträglich";
+"sozialverträglich"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "wirtschaftsverträglich";
+"wirtschaftsverträglich"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "gesellschaftsverträglich";
+"gesellschaftsverträglich"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "menschenverträglich";
+"menschenverträglich"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "stadtverträglich";
+"stadtverträglich"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "magenverträglich";
+"magenverträglich"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "hautverträglich";
+"hautverträglich"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "gesundheitsförderlich";
+"gesundheitsförderlich"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "erholsam";
+"erholsam"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "trinkbar";
+"trinkbar"[fontname=Helvetica,fontsize=8]
+"verträglich" -- "nahrhaft";
+"nahrhaft"[fontname=Helvetica,fontsize=8]
+"gut" -- "lieb";
+"lieb" [fontname=Helvetica,fontsize=10]
+"lieb" -- "charakterspezifisch";
+"charakterspezifisch"[fontname=Helvetica,fontsize=8]
+"lieb" -- "gutmütig";
+"gutmütig"[fontname=Helvetica,fontsize=8]
+"lieb" -- "großherzig";
+"großherzig"[fontname=Helvetica,fontsize=8]
+"lieb" -- "barmherzig";
+"barmherzig"[fontname=Helvetica,fontsize=8]
+"lieb" -- "kinderlieb";
+"kinderlieb"[fontname=Helvetica,fontsize=8]
+"lieb" -- "tierlieb";
+"tierlieb"[fontname=Helvetica,fontsize=8]
+"lieb" -- "herzallerliebst";
+"herzallerliebst"[fontname=Helvetica,fontsize=8]
+"lieb" -- "liebreich";
+"liebreich"[fontname=Helvetica,fontsize=8]
+"lieb" -- "gütig";
+"gütig"[fontname=Helvetica,fontsize=8]
+"lieb" -- "liebenswert";
+"liebenswert"[fontname=Helvetica,fontsize=8]
+"gut" -- "gerecht";
+"gerecht" [fontname=Helvetica,fontsize=10]
+"gerecht" -- "charakterspezifisch";
+"charakterspezifisch"[fontname=Helvetica,fontsize=8]
+"gerecht" -- "loyal";
+"loyal"[fontname=Helvetica,fontsize=8]
+"gerecht" -- "sportlich";
+"sportlich"[fontname=Helvetica,fontsize=8]
+"gerecht" -- "objektiv";
+"objektiv"[fontname=Helvetica,fontsize=8]
+"gerecht" -- "ritterlich";
+"ritterlich"[fontname=Helvetica,fontsize=8]
+"gut" -- "tugendreich";
+"tugendreich" [fontname=Helvetica,fontsize=10]
+"tugendreich" -- "charakterspezifisch";
+"charakterspezifisch"[fontname=Helvetica,fontsize=8]
+"tugendreich" -- "rechtschaffen";
+"rechtschaffen"[fontname=Helvetica,fontsize=8]
+"tugendreich" -- "ehrlich";
+"ehrlich"[fontname=Helvetica,fontsize=8]
+"tugendreich" -- "ehrenhaft";
+"ehrenhaft"[fontname=Helvetica,fontsize=8]
+"tugendreich" -- "seriös";
+"seriös"[fontname=Helvetica,fontsize=8]
+"tugendreich" -- "unbescholten";
+"unbescholten"[fontname=Helvetica,fontsize=8]
+"tugendreich" -- "aufrichtig";
+"aufrichtig"[fontname=Helvetica,fontsize=8]
+"tugendreich" -- "untadelig";
+"untadelig"[fontname=Helvetica,fontsize=8]
+"tugendreich" -- "unbestechlich";
+"unbestechlich"[fontname=Helvetica,fontsize=8]
+"gut" -- "unschuldig";
+"unschuldig" [fontname=Helvetica,fontsize=10]
+"unschuldig" -- "verhaltensspezifisch";
+"verhaltensspezifisch"[fontname=Helvetica,fontsize=8]
+"gut" -- "fleißig";
+"fleißig" [fontname=Helvetica,fontsize=10]
+"fleißig" -- "charakterspezifisch";
+"charakterspezifisch"[fontname=Helvetica,fontsize=8]
+"fleißig" -- "häuslich";
+"häuslich"[fontname=Helvetica,fontsize=8]
+"fleißig" -- "lernwillig";
+"lernwillig"[fontname=Helvetica,fontsize=8]
+"fleißig" -- "leistungsbereit";
+"leistungsbereit"[fontname=Helvetica,fontsize=8]
+"fleißig" -- "überfleißig";
+"überfleißig"[fontname=Helvetica,fontsize=8]
+"fleißig" -- "geschäftstüchtig";
+"geschäftstüchtig"[fontname=Helvetica,fontsize=8]
+"fleißig" -- "lebenstüchtig";
+"lebenstüchtig"[fontname=Helvetica,fontsize=8]
+"fleißig" -- "übereifrig";
+"übereifrig"[fontname=Helvetica,fontsize=8]
+"fleißig" -- "diensteifrig";
+"diensteifrig"[fontname=Helvetica,fontsize=8]
+"fleißig" -- "eilfertig";
+"eilfertig"[fontname=Helvetica,fontsize=8]
+"fleißig" -- "geschäftig";
+"geschäftig"[fontname=Helvetica,fontsize=8]
+"fleißig" -- "tatkräftig";
+"tatkräftig"[fontname=Helvetica,fontsize=8]
+"fleißig" -- "arbeitswillig";
+"arbeitswillig"[fontname=Helvetica,fontsize=8]
+"fleißig" -- "gelehrig";
+"gelehrig"[fontname=Helvetica,fontsize=8]
+"gut" -- "freundlich";
+"freundlich" [fontname=Helvetica,fontsize=10]
+"freundlich" -- "charakterspezifisch";
+"charakterspezifisch"[fontname=Helvetica,fontsize=8]
+"freundlich" -- "reformfreudig";
+"reformfreudig"[fontname=Helvetica,fontsize=8]
+"freundlich" -- "wohlmeinend";
+"wohlmeinend"[fontname=Helvetica,fontsize=8]
+"freundlich" -- "freundschaftlich";
+"freundschaftlich"[fontname=Helvetica,fontsize=8]
+"freundlich" -- "kameradschaftlich";
+"kameradschaftlich"[fontname=Helvetica,fontsize=8]
+"freundlich" -- "partnerschaftlich";
+"partnerschaftlich"[fontname=Helvetica,fontsize=8]
+"freundlich" -- "kumpelhaft";
+"kumpelhaft"[fontname=Helvetica,fontsize=8]
+"freundlich" -- "verbindlich";
+"verbindlich"[fontname=Helvetica,fontsize=8]
+"freundlich" -- "kollegial";
+"kollegial"[fontname=Helvetica,fontsize=8]
+"freundlich" -- "menschlich";
+"menschlich"[fontname=Helvetica,fontsize=8]
+"freundlich" -- "nett";
+"nett"[fontname=Helvetica,fontsize=8]
+"freundlich" -- "sonnig";
+"sonnig"[fontname=Helvetica,fontsize=8]
+"freundlich" -- "fürsorglich";
+"fürsorglich"[fontname=Helvetica,fontsize=8]
+"freundlich" -- "zugänglich";
+"zugänglich"[fontname=Helvetica,fontsize=8]
+"freundlich" -- "leutselig";
+"leutselig"[fontname=Helvetica,fontsize=8]
+"gut" -- "edelmütig";
+"edelmütig" [fontname=Helvetica,fontsize=10]
+"edelmütig" -- "charakterspezifisch";
+"charakterspezifisch"[fontname=Helvetica,fontsize=8]
+"edelmütig" -- "nobel";
+"nobel"[fontname=Helvetica,fontsize=8]
+"gut" -- "friedlich";
+"friedlich" [fontname=Helvetica,fontsize=10]
+"friedlich" -- "charakterspezifisch";
+"charakterspezifisch"[fontname=Helvetica,fontsize=8]
+"friedlich" -- "harmonisch";
+"harmonisch"[fontname=Helvetica,fontsize=8]
+"friedlich" -- "friedfertig";
+"friedfertig"[fontname=Helvetica,fontsize=8]
+"friedlich" -- "friedvoll";
+"friedvoll"[fontname=Helvetica,fontsize=8]
+"gut" -- "spitzenmäßig";
+"spitzenmäßig" [fontname=Helvetica,fontsize=10]
+"gut" -- "wünschenswert";
+"wünschenswert" [fontname=Helvetica,fontsize=10]
+"wünschenswert" -- "erstrebenswert";
+"erstrebenswert"[fontname=Helvetica,fontsize=8]
+"gut" -- "unübertrefflich";
+"unübertrefflich" [fontname=Helvetica,fontsize=10]
+"unübertrefflich" -- "vollkommen";
+"vollkommen"[fontname=Helvetica,fontsize=8]
+"gut" -- "okay";
+"okay" [fontname=Helvetica,fontsize=10]
+"gut" [fontname=Helvetica,fontsize=10]
+"gut" -- "reichlich";
+"reichlich" [fontname=Helvetica,fontsize=10]
+"reichlich" -- "viel";
+"viel"[fontname=Helvetica,fontsize=8]
+"reichlich" -- "satt";
+"satt"[fontname=Helvetica,fontsize=8]
+"reichlich" -- "überreichlich";
+"überreichlich"[fontname=Helvetica,fontsize=8]
+"reichlich" -- "opulent";
+"opulent"[fontname=Helvetica,fontsize=8]
+"reichlich" -- "abundant";
+"abundant"[fontname=Helvetica,fontsize=8]
+"lieb" [fontname=Helvetica,fontsize=10]
+"lieb" -- "charakterspezifisch";
+"charakterspezifisch" [fontname=Helvetica,fontsize=10]
+"charakterspezifisch" -- "verhaltensspezifisch";
+"verhaltensspezifisch"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "bequem";
+"bequem"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "manisch";
+"manisch"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "langsam";
+"langsam"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "untreu";
+"untreu"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "reiselustig";
+"reiselustig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "schlimm";
+"schlimm"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "kämpferisch";
+"kämpferisch"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "teamfähig";
+"teamfähig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "leidensfähig";
+"leidensfähig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "genussfreudig";
+"genussfreudig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "risikoscheu";
+"risikoscheu"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "vielgereist";
+"vielgereist"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "charakterlos";
+"charakterlos"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "unehrenhaft";
+"unehrenhaft"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "boshaft";
+"boshaft"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "übel";
+"übel"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "ungerecht";
+"ungerecht"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "brutal";
+"brutal"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "untüchtig";
+"untüchtig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "faul";
+"faul"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "ehrgeizig";
+"ehrgeizig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "lebhaft";
+"lebhaft"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "hierarchisch orientiert";
+"hierarchisch orientiert"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "wohlerzogen";
+"wohlerzogen"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "ungehorsam";
+"ungehorsam"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "frech";
+"frech"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "ehrfürchtig";
+"ehrfürchtig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "ehrerbietig";
+"ehrerbietig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "manierlich";
+"manierlich"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "zurückhaltend";
+"zurückhaltend"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "bescheiden";
+"bescheiden"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "kleinlaut";
+"kleinlaut"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "asketisch";
+"asketisch"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "anspruchsvoll";
+"anspruchsvoll"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "einfach";
+"einfach"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "dreist";
+"dreist"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "berechnend";
+"berechnend"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "opportunistisch";
+"opportunistisch"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "frühreif";
+"frühreif"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "stolz";
+"stolz"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "größenwahnsinnig";
+"größenwahnsinnig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "natürlich";
+"natürlich"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "gekünstelt";
+"gekünstelt"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "treu";
+"treu"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "schwierig";
+"schwierig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "unkompliziert";
+"unkompliziert"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "mutig";
+"mutig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "vernünftig";
+"vernünftig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "lustig";
+"lustig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "pflichtbewusst";
+"pflichtbewusst"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "umweltbewusst";
+"umweltbewusst"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "inkorrekt";
+"inkorrekt"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "unvernünftig";
+"unvernünftig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "stark";
+"stark"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "schwach";
+"schwach"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "sozial";
+"sozial"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "unsozial";
+"unsozial"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "exzentrisch";
+"exzentrisch"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "offen";
+"offen"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "verschlossen";
+"verschlossen"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "unehrlich";
+"unehrlich"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "unredlich";
+"unredlich"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "zwanghaft";
+"zwanghaft"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "befangen";
+"befangen"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "bestimmt";
+"bestimmt"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "frei";
+"frei"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "sparsam";
+"sparsam"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "freigebig";
+"freigebig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "unfreundlich";
+"unfreundlich"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "aggressiv";
+"aggressiv"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "nervös";
+"nervös"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "ruhig";
+"ruhig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "keifig";
+"keifig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "hart";
+"hart"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "geltungssüchtig";
+"geltungssüchtig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "gewinnsüchtig";
+"gewinnsüchtig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "unbescheiden";
+"unbescheiden"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "einzelgängerisch";
+"einzelgängerisch"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "gutwillig";
+"gutwillig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "unbeugsam";
+"unbeugsam"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "kultiviert";
+"kultiviert"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "furchtsam";
+"furchtsam"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "feige";
+"feige"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "gemessen";
+"gemessen"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "nachdenklich";
+"nachdenklich"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "undiszipliniert";
+"undiszipliniert"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "verhaltensauffällig";
+"verhaltensauffällig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "harmoniebedürftig";
+"harmoniebedürftig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "veranlagt";
+"veranlagt"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "niveauvoll";
+"niveauvoll"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "risikofreudig";
+"risikofreudig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "anhänglich";
+"anhänglich"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "besitzergreifend";
+"besitzergreifend"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "eingefleischt";
+"eingefleischt"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "trinkfreudig";
+"trinkfreudig"[fontname=Helvetica,fontsize=8]
+"charakterspezifisch" -- "perfektionistisch";
+"perfektionistisch"[fontname=Helvetica,fontsize=8]
+"lieb" -- "gutmütig";
+"gutmütig" [fontname=Helvetica,fontsize=10]
+"gutmütig" -- "harmlos";
+"harmlos"[fontname=Helvetica,fontsize=8]
+"gutmütig" -- "gutartig";
+"gutartig"[fontname=Helvetica,fontsize=8]
+"gutmütig" -- "weichherzig";
+"weichherzig"[fontname=Helvetica,fontsize=8]
+"gutmütig" -- "sanftmütig";
+"sanftmütig"[fontname=Helvetica,fontsize=8]
+"lieb" -- "großherzig";
+"großherzig" [fontname=Helvetica,fontsize=10]
+"großherzig" -- "fromm";
+"fromm"[fontname=Helvetica,fontsize=8]
+"lieb" -- "barmherzig";
+"barmherzig" [fontname=Helvetica,fontsize=10]
+"lieb" -- "kinderlieb";
+"kinderlieb" [fontname=Helvetica,fontsize=10]
+"lieb" -- "tierlieb";
+"tierlieb" [fontname=Helvetica,fontsize=10]
+"lieb" -- "herzallerliebst";
+"herzallerliebst" [fontname=Helvetica,fontsize=10]
+"lieb" -- "liebreich";
+"liebreich" [fontname=Helvetica,fontsize=10]
+"liebreich" -- "zart";
+"zart"[fontname=Helvetica,fontsize=8]
+"liebreich" -- "zärtlich";
+"zärtlich"[fontname=Helvetica,fontsize=8]
+"lieb" -- "gütig";
+"gütig" [fontname=Helvetica,fontsize=10]
+"gütig" -- "herzensgut";
+"herzensgut"[fontname=Helvetica,fontsize=8]
+"gütig" -- "gnädig";
+"gnädig"[fontname=Helvetica,fontsize=8]
+"lieb" -- "liebenswert";
+"liebenswert" [fontname=Helvetica,fontsize=10]
+"liebenswert" -- "niedlich";
+"niedlich"[fontname=Helvetica,fontsize=8]
+}
