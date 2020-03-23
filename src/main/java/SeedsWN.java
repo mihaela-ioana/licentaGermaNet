@@ -8,10 +8,15 @@ import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
-import java.io.File;
+import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+import scala.Tuple2;
+import org.apache.spark.api.java.JavaPairRDD;
+import org.apache.spark.api.java.JavaRDD;
+import org.apache.spark.api.java.JavaSparkContext;
 
 public class SeedsWN {
     private File germanetDir;
@@ -38,8 +43,6 @@ public class SeedsWN {
                     "machen", "jmdn.", "im", "haben", "jemandem", "wird", "zur", "bei", "des", "zum", "jmdm.",
                     "über", "ist", "nach", "o.ä.", "jemand", "lassen", "bestimmte", "bringen", "dass", "um");
 
-            clearSeedsVectors();
-
             /**
             //build words to write to xml
             computeCorpus();
@@ -53,7 +56,7 @@ public class SeedsWN {
             //eliminate stop words from corpus
             computeWords() ;
 
-            Map<Integer, Integer> result = seedWithWord("gut", 10, WordCategory.adj);
+            Map<Integer, Integer> result = seedWithWord("gut", 100, WordCategory.adj);
             seedsToVectors(result, true);
             /**Map<String, Long> newResult = new HashMap<>();
             for (Map.Entry<Integer, Integer> pair: result.entrySet()){
@@ -62,15 +65,19 @@ public class SeedsWN {
             newResult = sortByValue(newResult);
             //result.forEach((x, y)->System.out.println(this.germaNet.getSynsetByID(x) + ": " + y));
             writeWordsWithFrequencyToXMLFile("E:\\licenta\\GermaNet\\src\\main\\java\\reachedWords.xml", newResult);**/
+
+            //write seeds to file
+            String data = this.createDataForLIBSVMFile(this.X, true);
+
+            Map<Integer, Integer> result2 = seedWithWord("schlecht", 100, WordCategory.adj);
+            seedsToVectors(result2, false);
+            data += this.createDataForLIBSVMFile(this.X, false);
+            this.writeSeedsToSVMFile(data);
+
         } catch (Exception ex) {
             ex.printStackTrace();
             System.exit(0);
         }
-    }
-
-    private void clearSeedsVectors() {
-        this.seedsX = new ArrayList<>();
-        this.seedsY = new ArrayList<>();
     }
 
     /**
@@ -249,6 +256,49 @@ public class SeedsWN {
     public void addSeedsVectors(List<List<Integer>> X, List<List<Integer>> Y) {
         this.seedsX.add(X);
         this.seedsY.add(Y);
+    }
+
+    /**
+     * Method that transforms a seed vector to data that can be written in svm file.
+     * In order to use spark's naiveBayes we need JavaRDD<LabelPoint> => svm file converted in javaRDD
+     * A SVM File row format:  label  index:value index2:value2 ... , where value, value2, ... != 0.
+     * @param X
+     * @param positive
+     * @return
+     */
+    public String createDataForLIBSVMFile(List<List<Integer>> X, boolean positive) {
+        String data = "";
+        for (List<Integer> row : X) {
+            //variable which shows if the row is not empty (not only 0)
+            boolean flag = false;
+            for (int index = 0; index < row.size(); index ++){
+                if (row.get(index) != 0) {
+                    if (!flag){
+                        data += positive ? (1 + " ") : (0 + " ");
+                        flag = true;
+                    }
+                    data += index + ":" + row.get(index) + " ";
+                }
+            }
+            if (flag) {
+                data += "\n";
+            }
+        }
+
+        return data;
+    }
+
+    public void writeSeedsToSVMFile(String data) {
+        try {
+            File statText = new File("E:\\licenta\\GermaNet\\src\\main\\java\\seeds.txt");
+            FileOutputStream is = new FileOutputStream(statText);
+            OutputStreamWriter osw = new OutputStreamWriter(is);
+            Writer w = new BufferedWriter(osw);
+            w.write(data);
+            w.close();
+        } catch (IOException e) {
+            System.err.println("Problem writing to the file statsTest.txt");
+        }
     }
 
     //eliminate stop words from corpus

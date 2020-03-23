@@ -1,4 +1,7 @@
 import de.tuebingen.uni.sfs.germanet.api.*;
+import org.apache.spark.SparkConf;
+import org.apache.spark.api.java.JavaSparkContext;
+
 import java.io.*;
 import java.util.*;
 
@@ -6,7 +9,11 @@ public class MyApplication {
 
     public static void main(String[] args) {
         //tutorial();
-        SeedsWN wn = new SeedsWN();
+        //SeedsWN wn = new SeedsWN();
+        SparkConf sparkConf = new SparkConf().setAppName("MyApplication").setMaster("local[2]").set("spark.executor.memory","1g");
+        JavaSparkContext jsc = new JavaSparkContext(sparkConf);
+        Train train = new Train(jsc);
+        train.train();
     }
 
     static void tutorial () {
