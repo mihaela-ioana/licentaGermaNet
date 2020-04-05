@@ -350,6 +350,32 @@ public class SeedsWN {
     }
 
     /**
+     * If paraphrase exists, than split it in words and add each word to the corpus.
+     * @param def
+     */
+    private void addParaphraseToCorpus(String def) {
+        String[] words = def.split("[\\s+,/]");        //nur Komma und Space erscheint
+        for (int index = 0; index < words.length; index ++){
+            String word = words[index].replace("(", "");
+            word = word.replace(")", "");
+            this.corpus.add(word);
+        }
+    }
+
+    /**
+     * Method for editing the corpus list.
+     */
+    private void corpusProcessing() {
+        this.corpusWithDuplicates = this.corpus;
+        //eliminate duplicates
+        this.corpus = this.corpus.stream().distinct().collect(Collectors.toList());
+        //eliminate null
+        this.corpus = this.corpus.stream().filter(x -> x != null || !x.equals(",")).collect(Collectors.toList());
+
+        //!!! to lower is neccesary here??
+    }
+
+    /**
      * Count number of appearances for each word => wordsWithFrequency.
      * ! not corpus, corpus contains distinct words
      */
@@ -381,32 +407,6 @@ public class SeedsWN {
 
         return result;
 
-    }
-
-    /**
-     * Method for editing the corpus list.
-     */
-    private void corpusProcessing() {
-        this.corpusWithDuplicates = this.corpus;
-        //eliminate duplicates
-        this.corpus = this.corpus.stream().distinct().collect(Collectors.toList());
-        //eliminate null
-        this.corpus = this.corpus.stream().filter(x -> x != null || !x.equals(",")).collect(Collectors.toList());
-
-        //!!! to lower is neccesary here??
-    }
-
-    /**
-     * If paraphrase exists, than split it in words and add each word to the corpus.
-     * @param def
-     */
-    private void addParaphraseToCorpus(String def) {
-        String[] words = def.split("[\\s+,/]");        //nur Komma und Space erscheint
-        for (int index = 0; index < words.length; index ++){
-            String word = words[index].replace("(", "");
-            word = word.replace(")", "");
-            this.corpus.add(word);
-        }
     }
 
     private void addLexUnitsToCorpus(Synset s) {

@@ -18,7 +18,7 @@ public class Train {
     public void train() {
         String path = "E:\\licenta\\GermaNet\\src\\main\\java\\seeds.txt";
         JavaRDD<LabeledPoint> inputData = MLUtils.loadLibSVMFile(jsc.sc(), path).toJavaRDD();
-        //pentru 06 si 0.4 o dat 0.20 si pentru 0.75 si 0.25 -> 0.14 ... E normal sa scada accuracy?
+        //pentru 06 si 0.4 o dat 0.20 si pentru 0.75 si 0.25 ->0.15, apoi 0.14 ... E normal sa scada accuracy?
         JavaRDD<LabeledPoint>[] tmp = inputData.randomSplit(new double[]{0.75, 0.25});
         System.out.println("Temp0");
         tmp[0].foreach(x -> System.out.print(x));
